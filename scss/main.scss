@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    ::selection{
+        background-color: black;
+        color: white;
+    }
+}
+
+@mixin buttonprop {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: white;
+}
+
+:root{
+    --bg-color:rgb(146, 104, 224);
+    --btn-color: rgb(211 175 212 / 89%);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+
+    .header__logo{
+        h1{
+            margin: 1rem 2rem;
+            color: white;
+            cursor: pointer;
+        }
+        h1::first-letter{
+            color: red;
+            font-size: 45px;
+        }
+    }
+
+    .header__lists{
+
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+
+        .list{
+            margin: 3rem;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 26px;
+            color: white;
+        }
+        a:hover{
+            color: red;
+            font-size: 28px;
+        }
+        a:visited{
+            color: red;
+        }
+        a:active{
+            color: white;
+        }
+    }
+
+    .header__btn{
+
+            margin: auto;
+            margin-right: 2rem;
+
+        button{
+            margin-left: 2rem;
+            @include buttonprop;
+        }
+
+        button:hover{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+
+.container{
+    width: 100vw;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    height: 700px;
+
+    .container__left{
+        width: 45vw;
+        margin: 10rem 5rem;
+
+        h1{
+            text-align: center;
+            font-size: 2.5rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        h1:hover{
+            font-size: 3rem;
+            color: black;
+        }
+
+        p{
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        p::first-letter{
+            font-size: 3rem;
+            color: white;
+        }
+    }
+
+    .container__right{
+        width: 50vw;
+        
+        .forms{
+            width: 25rem;
+            height: 25rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 10rem;
+            background-color: black;
+            border-radius: 10px;
+            
+            .label{
+                margin-top: 1rem;
+                font-size: 1.5rem;
+            }
+
+            input{
+                width: 25rem;
+                margin: 0 auto;
+                width: 20rem;
+                height: 2rem;
+                text-align: center;
+                border-radius: 10px;
+            }
+            button{
+                @include buttonprop;
+                margin: auto;
+            }
+        }
+
+    }
+}
+
+.section2{
+    width: 100vw;
+    background-color: rgb(233, 233, 84);
+    height: 500px;
+    position: absolute;
+
+        .button{
+            width: 20rem;
+            background-color: rgb(145, 100, 190);
+            height: 20rem;
+            margin: auto;
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+
+            button{
+                margin: auto;
+                @include buttonprop;
+            }
+        }
+}

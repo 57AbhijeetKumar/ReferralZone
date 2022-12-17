@@ -1,0 +1,171 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* ::-moz-selection {
+  background-color: black;
+  color: white;
+}
+* ::selection {
+  background-color: black;
+  color: white;
+}
+
+:root {
+  --bg-color:rgb(146, 104, 224);
+  --btn-color: rgb(211 175 212 / 89%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+}
+.header .header__logo h1 {
+  margin: 1rem 2rem;
+  color: white;
+  cursor: pointer;
+}
+.header .header__logo h1::first-letter {
+  color: red;
+  font-size: 45px;
+}
+.header .header__lists {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+.header .header__lists .list {
+  margin: 3rem;
+}
+.header .header__lists li {
+  list-style: none;
+}
+.header .header__lists a {
+  text-decoration: none;
+  font-size: 26px;
+  color: white;
+}
+.header .header__lists a:hover {
+  color: red;
+  font-size: 28px;
+}
+.header .header__lists a:visited {
+  color: red;
+}
+.header .header__lists a:active {
+  color: white;
+}
+.header .header__btn {
+  margin: auto;
+  margin-right: 2rem;
+}
+.header .header__btn button {
+  margin-left: 2rem;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: white;
+}
+.header .header__btn button:hover {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.container {
+  width: 100vw;
+  background-color: red;
+  display: flex;
+  justify-content: space-evenly;
+  height: 700px;
+}
+.container .container__left {
+  width: 45vw;
+  margin: 10rem 5rem;
+}
+.container .container__left h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+.container .container__left h1:hover {
+  font-size: 3rem;
+  color: black;
+}
+.container .container__left p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 25px;
+}
+.container .container__left p::first-letter {
+  font-size: 3rem;
+  color: white;
+}
+.container .container__right {
+  width: 50vw;
+}
+.container .container__right .forms {
+  width: 25rem;
+  height: 25rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10rem;
+  background-color: black;
+  border-radius: 10px;
+}
+.container .container__right .forms .label {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.container .container__right .forms input {
+  width: 25rem;
+  margin: 0 auto;
+  width: 20rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.container .container__right .forms button {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: white;
+  margin: auto;
+}
+
+.section2 {
+  width: 100vw;
+  background-color: rgb(233, 233, 84);
+  height: 500px;
+  position: absolute;
+}
+.section2 .button {
+  width: 20rem;
+  background-color: rgb(145, 100, 190);
+  height: 20rem;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.section2 .button button {
+  margin: auto;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */

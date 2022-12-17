@@ -1,0 +1,15 @@
+@mixin button {
+    width: 6rem;
+    height: 3rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: white;   
+    button:hover{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+    }
+}
+

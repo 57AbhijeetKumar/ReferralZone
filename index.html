@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReferrelZone</title>
+    <link rel="stylesheet" href="./scss/main.css">
+    <script src="./javaScript/index.js"></script>
+</head>
+
+<body">
+    <header class="header">
+        <div class="header__logo">
+            <h1 onclick="logo();">ReferralsZone</h1>
+        </div>
+        <ul class="header__lists">
+            <li class="list"><a href="#">Home</a></li>
+            <li class="list"><a href="./about">About Us</a></li>
+            <li class="list"><a href="./contact">Contact Us</a></li>
+            <li class="list"><a href="./services">Services</a></li>
+        </ul>
+        <div class="header__btn">
+            <button  onclick="register();">Register</button>
+            <button onclick="login();">Login</button>
+        </div>
+    </header>
+    <section class="container">
+        <div class="container__left">
+            <h1 onmouseenter="clickMouse();">Welcome to Referrals Zone</h1>
+            <p ondblclick="para();">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam iste error tempora, doloribus neque
+                vitae rerum labore explicabo laudantium, deleniti eius aspernatur pariatur distinctio, quis officiis
+                blanditiis illum possimus mollitia!</p>
+        </div>
+        <div class="container__right">
+
+            <form class="forms" action="">
+                <label oncontextmenu="left();" class="label" for="name">Name</label>
+                <input type="text" placeholder="Enter Your Name">
+                <label class="label" for="email">Email</label>
+                <input type="email" placeholder="Enter Your Email">
+                <label class="label" for="phone">Contact No</label>
+                <input type="number" placeholder="Enter Your Contact Number">
+                <label class="label" for="query">Query</label>
+                <input type="text" placeholder="Enter Your Query">
+                <button onclick="form__submit();">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="button">
+            <button onclick="addition();">Addition</button>
+            <button onclick="subtraction();">Subtraction</button>
+            <button onclick="mult();">Multiplication</button>
+            <button onclick="divide();">Division</button>
+        </div>
+    </section>
+</body>
+
+</html>
